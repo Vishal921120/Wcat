@@ -1,0 +1,32 @@
+1. The process. argv() method is used for returning all the command-line arguments that were passed when the Node. js process was being launched.
+2. process. argv is an array containing the command line arguments.
+
+3.The Node.js file system module allows you to work with the file system on your computer.
+To include the File System module, use the require() method:
+var fs = require('fs');
+
+4. <Buffer 68 65 6c 6c 6f 20 66 31 0d 0a 0d 0a 0d 0a 0d 0a 0d 0a 0d 0a 62 79 79 65 65 20 66 32>
+<Buffer 68 65 6c 6c 6f 20 66 32 0d 0a 0d 0a 0d 0a 0d 0a 62 79 79 65 20 66 32>
+
+5. fileRead()	     vs    fileReadSync()
+Non-Blocking process	Blocking process
+Uses callback	        uses variable to store content
+Asynchronous nature	    Synchronous nature
+
+6. \n means new line. It means that the cursor must go to the next line.
+ \r means carriage return. It means that the cursor should go back to the beginning of the line.
+
+7. The includes() method returns true if a string contains a specified string.
+Otherwise it returns false. The includes() method is case sensitive
+
+9.The #! shebang is used to tell the kernel which interpreter should be used to run the commands present in the file. 
+When we run a file starting with #! , the kernel opens the file and takes the contents written right after the #! until the end of the line.
+
+8. For making wcat globally
+  i. run this command :- npm init -y
+  ii. open package.json and paste 
+  "bin" : {
+    "wcat" : "wcat.js"
+  }
+  iii. paste shebang code in wcat.js at top :- #!/user/bin/env node
+  iv. In terminal :- npm link
